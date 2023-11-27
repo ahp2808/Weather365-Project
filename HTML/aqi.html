@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather365</title>
+    <link rel="stylesheet" href="/CSS/aqi.css" />
+  </head>
+
+  <img id="bgv" src="/Media/AltEarthBGV.jpg" alt="" />
+  
+  <body>
+  
+    <div id="header">
+      <img src="/Media/websiteLogo.png" alt="" width="3%" height="3%" />
+      <a id="pwf" href="index.html">WEATHER365</a>
+      <h1 id="msg">Get weather updates with a click!</h1>
+    </div>
+    <button id="op3" onclick="window.location.href='index.html';" style="width: 10%; margin-left: 3%">
+    Home</button>
+    <button id="op2" onclick="window.location.href='wdet.html';" style="width: 10%; margin-left: 3%">
+    Detailed Analysis</button>
+      <button id="op4" onclick="window.location.href='abt.html';" style="width: 10%; margin-left: 3%">About Us</button>
+      <div id="Wdetails">
+      <div id="cont">
+        <h1 id="msg2">Current Air Quality Details</h1>
+        <input id="inp1" type="search" placeholder="Enter Location" />
+        <button id="op1" type="submit" style="width:7%;">Search</button>
+        <h4 style=" color: #00f4ff"><i>AQI ranges from 1 to 10, where 1 represents best and 10 represents worst.</i></h4>
+
+      </div>
+      <h3>
+        <span id="cname" style="text-transform: capitalize; color: #00f4ff; margin-left: 1%"></span></h3>
+      <div id="coord" style="visibility: hidden; margin-left: 1%; color: #00f4ff">
+
+        <h3>Latitude:<span id="lt1">...</span></h3>
+        <h3>Longitude:<span id="lg1">...</span></h3>
+        <h4 style=" color: #00f4ff"><i>Pollutant concentration in μg/m<sup>3</sup></i></h4>
+
+      </div>
+      
+      <div id="cards" style="display: flex">
+        <div id="crd1">
+          <h1>AQI<span id="aqi"></span></h1>
+          <h3>PM<sub>2.5</sub><span id="p2">...</span></h3>
+          <h3>PM<sub>10</sub><span id="p10">...</span></h3>
+        </div>
+        <div id="crd2">
+          <h4>Carbon monoxide(CO)<span id="co">...</span></h3>
+          <h4>Nitrogen monoxide(NO)<span id="nm">...</span></h3>
+          <h4>Nitrogen dioxide(NO2)<span id="nd">...</span></h3>
+        </div>
+        <div id="crd3">
+          <h4>Ozone(O<sub>3</sub>)<span id="oz">...</span></h3>
+          <h4>Sulphur dioxide(SO<sub>2</sub>)<span id="sd">...</span></h3>
+          <h4>Ammonia(NH<sub>3</sub>)<span id="am">...</span></h3>
+        </div>
+      </div>
+      <h5 style="float: right; color: #00f4ff">
+        <i
+          >(Check your Internet Connection if Weather details aren't visible)</i
+        >
+      </h5>
+    </div>
+  </body>
+
+  <script src="/JS/aqi.js"> </script>
+</html>

@@ -1,0 +1,181 @@
+body {
+  overflow-y: visible;
+}
+a {
+  text-decoration: none;
+}
+#all:hover {
+  background-color: rgba(0, 0, 255, 0.502);
+  border-color: white #10d4ff #10d4ff white;
+  transform: scale(1.01);
+}
+#all {
+  margin: auto auto;
+  background-color: rgba(0, 0, 255, 0.1);
+  display: block;
+  width: 70%;
+  height: 75%;
+  border-style: solid;
+  padding: 2% 3%;
+  border-radius: 15px;
+  border-color: #10d4ff white white #10d4ff;
+  /* border-image: linear-gradient(#00C0BF, transparent,transparent) 1; */
+  border-width: 8px;
+  transition: transform 4s, border-color 4s, background-color 4s;
+}
+
+#bgv {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#header {
+  text-align: center;
+}
+
+#pwf {
+  display: inline;
+  color: #00f4ff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 320%;
+}
+
+#msg {
+  color: #00f4ff; /*rgba(120, 15, 255, 1);*/
+  font-size: 29px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#options {
+  display: block;
+  text-align: center;
+  background-color: #00f4ff;
+  border-radius: 10px;
+  height: auto;
+  padding-bottom: 2px;
+  max-height: 300px; /*32*/
+  /* transition: max-height 2.5s; */
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+
+#options:hover {
+  overflow: -moz-hidden-unscrollable -moz-hidden-unscrollable;
+}
+/* #options:hover #expand {
+  transform: rotate(180deg);
+  border-color: transparent;
+} */
+
+#inf:hover{
+  overflow: -moz-hidden-unscrollable -moz-hidden-unscrollable;
+}
+#inf{
+  display: block;
+  padding: 1% 0%;
+  max-height:22px;
+  max-width: 90px;
+  background-color: #0000ff;
+  color: #00f4ff;
+  overflow: hidden;
+  width: 100%;
+}
+#exp{
+  color: #00f4ff;
+  width: 90px;
+}
+#inf:hover{
+  max-height: 100%;
+  max-width: 400px;
+}
+#op1,#op2,#op3,#op4{
+  margin: 1% 0.5%;
+  width: 15%;
+  height: 100%;
+  font-size: 100%;
+  border-radius: 15px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #0000aa;
+  border-color: #0000ff;
+  transition: transform 0.25s, border-color 0.25s, background-color 0.25s,
+    box-shadow 0.25s;
+}
+
+#op1:hover,#op2:hover,#op3:hover,#op4:hover{
+  display: inline;
+  transform: scale(1.1);
+  visibility: visible;
+  border-color: white;
+  background-color: #10d4ff;
+  /* background-color: #0000ff80; */
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 0, 255, 0.9);
+}
+
+#op1:active,#op3:active,#op2:active ,#op4:active{
+  opacity: 0.5;
+}
+
+#expand {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  font-size: 25px;
+  transition: transform 1.5s;
+  color: white;
+}
+
+#inp1 {
+  display: inline;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  margin: 1% 0%;
+  height: auto;
+  width: auto;
+  background-color: white;
+}
+#cities {
+  padding: 1%;
+  margin-top: 2%;
+}
+h3 {
+  background-color: rgba(0, 0, 255, 0.7);
+  border-radius: 5px;
+  width: 50%;
+  margin: 1% auto;
+  text-align: center;
+  display: block;
+  color: #00f4ff;
+}
+tr:hover{
+  transform: scale(1.01);
+}
+#table1,td,th,tr{
+  background-color: #0000ff;
+  text-align: center;
+  color: #00f4ff;
+  border-radius: 4px;
+  transition: transform 0.5s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#table1{
+  border: transparent solid 1px;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #0000ff;
+}
+#srchct{
+  display: flex;
+  place-content: center;
+  width: 50%;
+  margin: auto auto;
+  visibility: hidden;
+}

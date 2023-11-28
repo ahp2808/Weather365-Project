@@ -1,0 +1,109 @@
+#bgv {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+a{
+  text-decoration: none;
+}
+#header {
+  display: inline-block;
+  border: #10d4ff solid 1px;
+  background-color: rgba(0, 0, 255, 0.4);
+  border-radius: 5px;
+  padding: 1%;
+  width: 96%;
+  margin: 1%;
+}
+
+#Wdetails:hover {
+  background-color: rgba(0, 0, 255, 0.502);
+  border-color: white #10d4ff #10d4ff white;
+  transform: scale(1.01);
+}
+#Wdetails {
+  width: 90%;
+  height: 100%;
+  border-style: solid;
+  margin: auto;
+  padding: auto;
+  border-radius: 15px;
+  border-color: #10d4ff white white #10d4ff;
+  border-width: 4px;
+  transition: transform 4s, border-color 4s, background-color 4s;
+}
+#pwf {
+  display: inline;
+  text-decoration: none;
+  color: #10d4ff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 230%;
+}
+
+#msg,#msg2 {
+  color: white; /*rgba(120, 15, 255, 1);*/
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#inp1 {
+  display: inline;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  margin: 1% 0%;
+  height: auto;
+  width: auto;
+  background-color: white;
+}
+#op1,#op2,#op3,#op4{
+  margin: 1% 0.2%;
+  width: 20%;
+  height: 100%;
+  font-size: 100%;
+  border-radius: 15px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #0000aa;
+  border-color: #0000ff;
+  transition: transform 0.25s, border-color 0.25s, background-color 0.25s,
+    box-shadow 0.25s;
+}
+
+#op1:hover,#op2:hover,#op3:hover,#op4:hover{
+  display: inline;
+  transform: scale(1.1);
+  visibility: visible;
+  border-color: white;
+  background-color: #10d4ff;
+  /* background-color: #0000ff80; */
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 200, 255, 0.9);
+}
+#cards{
+  visibility: hidden;
+}
+#op1:active,#op3:active,#op2:active ,#op4:active{
+  opacity: 0.5;
+}
+#crd1,#crd2,#crd3,#crd4{
+  max-width: 25%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #0000aa;
+  color: #10d4ff;
+  transition: box-shadow 0.5s,border 0.5s;
+  margin-bottom: 3%;
+  padding: 2%;
+  box-shadow: 8px 8px rgba(0, 200, 255, 0.5);
+  border: #0000aa solid 5px;
+}
+#crd1:hover,#crd2:hover,#crd3:hover,#crd4:hover{
+  border: #10d4ff solid 5px;
+  box-shadow: 5px 3px #0000aa;
+}
